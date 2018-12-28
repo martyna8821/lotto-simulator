@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Lotto Simulator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div class="jumbotron text-center">
+    <h1 class="display-4">Drawn results</h1>
+    <p class="lead"> </p>
+    <hr class="my-4">
+
+    <p>
+    <a th:each="result: ${results}">
+         <button type="button" class="btn btn-success rounded-circle"><a th:text="${result}"> </a></button>
+    </a>
+    </p>
+        <a class="btn btn-light btn-lg" href="draw" role="button">AGAIN</a>
+        <a class="btn btn-light btn-lg" href="/" role="button">BACK</a>
+
+</div>
+
+    <div class="list-group text-center ">
+        <div class="list-group-item list-group-item-action  list-group-item-success " >
+            Current settings:
+        </div>
+        <div class="list-group-item list-group-item-action  " >
+            minimum value: <a th:text="${min}"></a>
+        </div>
+        <div class="list-group-item list-group-item-action " >
+            maximum value: <a th:text="${max}"></a>
+        </div>
+        <div class="list-group-item list-group-item-action  " >
+            quantity: <a th:text="${quantity}"></a>
+        </div>
+    </div>
+
+
+</body>
+</html>

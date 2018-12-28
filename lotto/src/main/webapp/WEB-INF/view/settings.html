@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Lotto Simulator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+
+    <h1 class="display-4">Enter new settings</h1>
+    <p class="lead"> </p>
+
+    <form method="post" th:object="${settings}" th:action="@{/settings-form-check}" >
+
+
+        <div class="form-row">
+
+            <div class="col">
+              <label for="min">minimum </label>
+              <input type="number"  th:field="*{min}"  class=" form-control"  id="min"  placeholder="min">
+
+            </div>
+        <div class="col">
+            <label for="max">max    </label>
+            <input type="number" class="form-control"  th:field="*{max}"   id="max" placeholder="max">
+
+        </div>
+        <div class="col">
+            <label for="quantity">quantity</label>
+            <input type="number"  class="form-control" th:field="*{quantity}"   id="quantity" placeholder="quantity">
+
+        </div>
+        </div>
+        <br>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary btn-lg" >SUBMIT</button>
+            <a class="btn btn-light btn-lg" href="/" role="button">BACK</a>
+        </div>
+       </form>
+
+
+</div>
+
+
+<div class="list-group text-center ">
+<div class="list-group-item list-group-item-action list-group-item-danger " th:if="${#fields.hasErrors('${settings.min}')}">
+    minimum value <a th:errors="${settings.min}"></a>
+</div>
+<div class="list-group-item list-group-item-action list-group-item-danger  " th:if="${#fields.hasErrors('${settings.max}')}">
+   maximum vale  <a th:errors="${settings.max}"></a>
+</div>
+<div class="list-group-item list-group-item-action list-group-item-danger " th:if="${#fields.hasErrors('${settings.quantity}')}">
+    quantity <a th:errors="${settings.quantity}"></a>
+</div>
+    <div class="list-group-item list-group-item-action list-group-item-danger " th:if="${hasIllegalValues}">
+        Min must be smaller then max and quantity must be bigger then max-min.
+    </div>
+</div>
+
+
+
+
+
+
+</body>
+</html>
