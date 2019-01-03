@@ -1,5 +1,6 @@
 package pl.martyna.lotto.dto;
 
+import javax.persistence.*;
 import javax.validation.constraints.Min;
 
 /**
@@ -7,11 +8,13 @@ import javax.validation.constraints.Min;
  * @author Martyna Drabinska
  * @version 0.1
  */
+
 public class Settings  {
 
     /** minimum value of drawn result */
     @Min(1)
     private int min;
+
 
     /** maximum value of drawn result */
     @Min(2)

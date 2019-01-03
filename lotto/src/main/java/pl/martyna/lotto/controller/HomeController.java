@@ -1,6 +1,7 @@
 package pl.martyna.lotto.controller;
 
 
+import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -25,6 +26,8 @@ public class HomeController {
     /** Service responsible for lotto simulation */
     private final Draw draw;
 
+  /// @Autowired
+    private SessionFactory sessionFactory;
     /**
      * default constructor
      * @param draw service Draw
