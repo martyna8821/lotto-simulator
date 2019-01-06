@@ -1,7 +1,7 @@
 import org.junit.*;
 
 import pl.martyna.lotto.exceptions.IllegalValueException;
-import pl.martyna.lotto.services.Draw;
+import pl.martyna.lotto.service.SimulationServiceImp;
 
 import java.util.Collections;
 import java.util.Set;
@@ -12,18 +12,18 @@ import static org.junit.Assert.*;
  * @author Martyna Drabinska
  * @version 1.0
  */
-public class DrawTest {
+public class SimulationTest {
 
     /** Draw class object for testing */
-    private Draw draw;
+    private SimulationServiceImp simulationService;
 
     /** Default constructor */
-    public DrawTest(){}
+    public SimulationTest(){}
 
     /** Before each test creates new instance od Draw class  */
     @Before
     public void setUp(){
-        draw = new Draw();
+        this.simulationService = new SimulationServiceImp();
     }
 
     /**
@@ -32,7 +32,7 @@ public class DrawTest {
      */
     @Test(expected = IllegalValueException.class)
     public void testIncorrectRange() throws IllegalValueException{
-        draw.changeSettings(10,2,2);
+        simulationService.changeSettings(10,2,2);
     }
 
     /**
@@ -41,17 +41,17 @@ public class DrawTest {
      */
     @Test(expected = IllegalValueException.class)
     public void testQuantityOutOfRange() throws IllegalValueException{
-        draw.changeSettings(1,10,20);
+        simulationService.changeSettings(1,10,20);
     }
 
     /** Tests if setting correct settings values will succeeded */
     @Test
     public void testCorrectSettings(){
         try{
-            draw.changeSettings(1,30, 5);
-            assertEquals("Min not set",1, draw.getMin());
-            assertEquals("Max not set", 30, draw.getMax());
-            assertEquals("Quantity not set",5, draw.getQuantity());
+            simulationService.changeSettings(1,30, 5);
+            assertEquals("Min not set",1, simulationService.getMin());
+            assertEquals("Max not set", 30, simulationService.getMax());
+            assertEquals("Quantity not set",5, simulationService.getQuantity());
         }
         catch (IllegalValueException ex){
             fail("Should not throw IllegalValueException for correct settings values");
@@ -61,36 +61,37 @@ public class DrawTest {
     /** Tests if drawn results set is not null */
     @Test
     public void testIfDrawnSetNotNull(){
-        assertNotNull("Drawn result set is null",draw.randomResults());
+        assertNotNull("Drawn result set is null",simulationService.randomResults());
     }
 
     /** Tests if quantity of drawn results matches the settings quantity value */
     @Test
     public void testQuantityOfDrawnNumbers(){
-        assertEquals("Incorrect quantity of drawn results",draw.randomResults().size(), draw.getQuantity());
+        assertEquals("Incorrect quantity of drawn results",
+                simulationService.randomResults().size(), simulationService.getQuantity());
     }
 
     /** Tests if min value of result in drawn set is not smaller then settings min value */
     @Test
     public void testMinDrawnNumber(){
-        Set<Integer> results = draw.randomResults();
-        if(Collections.min(results) < draw.getMin())
+        Set<Integer> results = simulationService.randomResults();
+        if(Collections.min(results) < simulationService.getMin())
                 fail("Drawn minimum result smaller then min");
 
     }
     /** Tests if max value of result in drawn set is not bigger then settings max value */
     @Test
     public void testMaxDrawnNumber(){
-        Set<Integer> results = draw.randomResults();
-        if(   Collections.max(results) > draw.getMax())
+        Set<Integer> results = simulationService.randomResults();
+        if(   Collections.max(results) > simulationService.getMax())
             fail("Drawn maximum result bigger then max");
     }
 
     /** Tests if each draw simulation returns different results  */
     @Test
     public void testIfEachDrawIsDifferent(){
-        Set<Integer> results1 = draw.randomResults();
-        Set<Integer> results2 = draw.randomResults();
+        Set<Integer> results1 = simulationService.randomResults();
+        Set<Integer> results2 = simulationService.randomResults();
         assertFalse(results1.containsAll(results2));
     }
 

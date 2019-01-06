@@ -1,6 +1,6 @@
 package pl.martyna.lotto.dto;
 
-import javax.persistence.*;
+
 import javax.validation.constraints.Min;
 
 /**

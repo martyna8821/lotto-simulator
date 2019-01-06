@@ -1,4 +1,4 @@
 /**
- * Contains Spring MVC Framework configuration
+ * Contains classes with application configuration
  */
 package pl.martyna.lotto.config;

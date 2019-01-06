@@ -1,8 +1,7 @@
-package pl.martyna.lotto.services;
+package pl.martyna.lotto.service;
 
 import org.springframework.stereotype.Service;
 import pl.martyna.lotto.exceptions.IllegalValueException;
-
 import java.util.*;
 
 /**
@@ -11,7 +10,8 @@ import java.util.*;
  * @version 2.0
  */
 @Service
-public class Draw {
+public class SimulationServiceImp implements SimulationService {
+
 
     /** minimum value of result, default: 1 */
     private int min = 1;
@@ -20,11 +20,8 @@ public class Draw {
     /** quantity of result, default: 5 */
     private int quantity = 5;
 
-    /** List of previous drawings */
-    private final List<Set<Integer>> history = new LinkedList<>();
-
     /** Default constructor */
-    public Draw(){}
+    public SimulationServiceImp(){}
 
     /**
      * Changes settings of simulation if passed parameters are correct
@@ -33,6 +30,7 @@ public class Draw {
      * @param quantity new quantity of results
      * @throws IllegalValueException if for passed arguments model can't carry out a simulation
      */
+    @Override
     public void changeSettings(int min, int max, int quantity) throws IllegalValueException {
         if(min > max || (max - min) < quantity ){
             throw new IllegalValueException();
@@ -48,6 +46,7 @@ public class Draw {
      * Carries out a server drawing simulation and returns set representing its results
      * @return unmodifiable set of drawn results
      */
+    @Override
     public Set<Integer> randomResults(){
 
         Set<Integer> results = new TreeSet<>();
@@ -55,7 +54,6 @@ public class Draw {
         while(results.size() < quantity){
             results.add(randomGenerator.nextInt(max)+min);
         }
-        history.add(results);
         return Collections.unmodifiableSet(results);
     }
 
@@ -81,14 +79,6 @@ public class Draw {
      */
     public int getQuantity() {
         return quantity;
-    }
-
-    /**
-     * Returns list of previous drawings
-     * @return list of previous drawings
-     */
-    public List<Set<Integer>> getHistory(){
-        return Collections.unmodifiableList(history);
     }
 
 }

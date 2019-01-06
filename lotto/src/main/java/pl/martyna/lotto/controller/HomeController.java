@@ -1,7 +1,5 @@
 package pl.martyna.lotto.controller;
 
-
-import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -9,14 +7,17 @@ import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import pl.martyna.lotto.dto.Settings;
-import pl.martyna.lotto.services.Draw;
+import pl.martyna.lotto.service.DrawService;
+import pl.martyna.lotto.service.SimulationService;
+import pl.martyna.lotto.service.SimulationServiceImp;
 import pl.martyna.lotto.exceptions.IllegalValueException;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
+import java.util.Set;
 
 /**
- * Spring Controller
+ * Spring MVC Controller
  * @author Martyna Drabinska
  * @version 0.1
  */
@@ -24,17 +25,19 @@ import javax.validation.Valid;
 public class HomeController {
 
     /** Service responsible for lotto simulation */
-    private final Draw draw;
+    private final SimulationService simulationService;
+    /** Service responsible for database operations */
+    private final DrawService drawService;
 
-  /// @Autowired
-    private SessionFactory sessionFactory;
     /**
      * default constructor
-     * @param draw service Draw
+     * @param drawService service responsible for database operations
+     * @param simulationService service responsible for lotto simulation
      */
     @Autowired
-HomeController(Draw draw){
-    this.draw = draw;
+    HomeController(SimulationServiceImp simulationService, DrawService drawService){
+      this.simulationService = simulationService;
+      this.drawService = drawService;
 }
 
     /**
@@ -57,10 +60,15 @@ HomeController(Draw draw){
     @RequestMapping("/draw")
     public String showResults(@CookieValue(value="min", defaultValue ="1") int minCookie, @CookieValue(value = "max", defaultValue = "49") int maxCookie,
                               @CookieValue(value = "quantity", defaultValue = "5") int quantityCookie, ModelMap modelMap){
-        modelMap.addAttribute("results", draw.randomResults());
+
+        Set<Integer> results = simulationService.randomResults();
+
+        modelMap.addAttribute("results", results);
         modelMap.addAttribute("min", minCookie);
         modelMap.addAttribute("max", maxCookie);
         modelMap.addAttribute("quantity", quantityCookie);
+        drawService.saveDraw(results);
+
         return "draw";
     }
 
@@ -77,6 +85,7 @@ HomeController(Draw draw){
         modelMap.addAttribute("hasIllegalValues", hasIllegalValues);
         Settings settings = new Settings();
         modelMap.addAttribute("settings", settings);
+
         return "settings";
     }
 
@@ -102,7 +111,8 @@ HomeController(Draw draw){
             response.addCookie(minCookie);
             response.addCookie(maxCookie);
             response.addCookie(quantityCookie);
-            draw.changeSettings(settings.getMin(), settings.getMax(), settings.getQuantity());
+            simulationService.changeSettings(settings.getMin(), settings.getMax(), settings.getQuantity());
+
             return "index";
         }
     }
@@ -116,6 +126,7 @@ HomeController(Draw draw){
     public String handle(Model model){
         boolean hasIllegalValues = true;
         model.addAttribute("hasIllegalValues", hasIllegalValues);
+
         return "redirect:/settings";
     }
 
@@ -126,7 +137,7 @@ HomeController(Draw draw){
      */
     @RequestMapping("/history")
     public String showHistory(ModelMap modelMap){
-        modelMap.addAttribute("history", draw.getHistory());
+        modelMap.addAttribute("history", drawService.getHistory());
         return "history";
     }
 
