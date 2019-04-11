@@ -26,4 +26,26 @@ public class Result {
         this.draw = draw;
     }
 
+    public Result() {
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
+    public Draw getDraw() {
+        return draw;
+    }
+
+    public void setDraw(Draw draw) {
+        this.draw = draw;
+    }
 }

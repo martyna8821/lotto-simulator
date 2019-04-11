@@ -7,42 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abedfa8d-b2b5-4be8-92bb-185eca71aca3" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/275f7ce8-dcd8-40ad-bde9-d16ab8923455.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/config/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/config/HibernateConf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/config/HibernateConf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/config/package-info.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/controller/package-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/dao/DrawDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/dao/DrawDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/dao/DrawDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/dao/DrawDaoImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/dao/ResultDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/dao/ResultDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/dao/ResultDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/dao/ResultDaoImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/dao/package-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/dto/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/dto/Settings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/dto/package-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/exceptions/IllegalValueException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/exceptions/IllegalValueException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/exceptions/package-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/model/Draw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/model/Draw.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/model/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/model/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/model/package-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/service/DrawService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/service/DrawService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/service/DrawServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/service/DrawServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/service/SimulationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/service/SimulationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/service/SimulationServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/service/SimulationServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/service/package-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/create.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/HelloWeb-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/create.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/martyna/lotto/dto/Settings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/martyna/lotto/dto/Settings.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/martyna/lotto/service/SimulationServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/martyna/lotto/service/SimulationServiceImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lotto/WEB-INF/HelloWeb-servlet.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lotto/WEB-INF/classes/create.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lotto/WEB-INF/classes/pl/martyna/lotto/dto/Settings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lotto/WEB-INF/classes/pl/martyna/lotto/dto/Settings.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lotto/WEB-INF/classes/pl/martyna/lotto/service/SimulationServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lotto/WEB-INF/classes/pl/martyna/lotto/service/SimulationServiceImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lotto/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/lotto/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/SimulationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/SimulationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/settings.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/settings.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/martyna/lotto/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/martyna/lotto/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lotto/WEB-INF/classes/pl/martyna/lotto/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lotto/WEB-INF/classes/pl/martyna/lotto/controller/HomeController.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -79,23 +50,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/model/Draw.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/dao/DrawDaoImp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="69">
+              <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -106,8 +65,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/dao/DrawDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="253">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,23 +75,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/dto/Settings.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/dao/DrawDaoImp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+            <state relative-caret-position="161">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
-                <element signature="e#331#332#0" expanded="true" />
-                <element signature="e#357#358#0" expanded="true" />
-                <element signature="e#392#393#0" expanded="true" />
-                <element signature="e#422#423#0" expanded="true" />
-                <element signature="e#449#450#0" expanded="true" />
-                <element signature="e#475#476#0" expanded="true" />
-                <element signature="e#510#511#0" expanded="true" />
-                <element signature="e#540#541#0" expanded="true" />
-                <element signature="e#572#573#0" expanded="true" />
-                <element signature="e#603#604#0" expanded="true" />
-                <element signature="e#648#649#0" expanded="true" />
-                <element signature="e#688#689#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -141,12 +89,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/dao/ResultDaoImp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
+            <state relative-caret-position="107">
               <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#627#628#0" expanded="true" />
-                <element signature="e#679#680#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -164,22 +110,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/controller/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2001">
-              <caret line="87" selection-start-line="87" selection-end-line="87" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1565#1566#0" expanded="true" />
-                <element signature="e#1591#1592#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/config/AppConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="38" column="55" lean-forward="true" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
+            <state relative-caret-position="-45">
+              <caret line="83" column="36" lean-forward="true" selection-start-line="83" selection-start-column="36" selection-end-line="83" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -188,10 +120,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/config/HibernateConf.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/settings.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="-92">
+              <caret line="20" column="70" selection-start-line="20" selection-start-column="70" selection-end-line="20" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/model/Result.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="598">
+              <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+              <folding>
+                <element signature="e#540#541#0" expanded="true" />
+                <element signature="e#565#566#0" expanded="true" />
+                <element signature="e#599#600#0" expanded="true" />
+                <element signature="e#627#628#0" expanded="true" />
+                <element signature="e#668#669#0" expanded="true" />
+                <element signature="e#704#705#0" expanded="true" />
+                <element signature="e#733#734#0" expanded="true" />
+                <element signature="e#760#761#0" expanded="true" />
+                <element signature="e#798#799#0" expanded="true" />
+                <element signature="e#830#831#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/config/AppConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -203,7 +165,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/exceptions/IllegalValueException.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="299">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -229,7 +191,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/settings.html" />
         <option value="$PROJECT_DIR$/web/WEB-INF/HelloWeb-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/controller/package-info.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/dto/package-info.java" />
@@ -269,7 +230,6 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/service/SimulationServiceImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/service/DrawServiceImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/service/DrawService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/model/Result.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/model/Draw.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/exceptions/IllegalValueException.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/dto/Settings.java" />
@@ -277,9 +237,11 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/dao/ResultDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/dao/DrawDaoImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/dao/DrawDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/controller/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/config/HibernateConf.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/config/AppConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/settings.html" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/model/Result.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/martyna/lotto/controller/HomeController.java" />
       </list>
     </option>
   </component>
@@ -330,7 +292,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -370,51 +331,6 @@
               <item name="lotto" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lotto" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lotto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lotto" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lotto" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lotto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lotto" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lotto" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lotto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lotto" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lotto" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lotto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lotto" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lotto" type="462c0819:PsiDirectoryNode" />
-              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lotto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lotto" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -425,10 +341,20 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="lotto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lotto" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -649,10 +575,10 @@
     <list>
       <item itemvalue="JUnit.DrawTest" />
       <item itemvalue="JUnit.SimulationTest" />
-      <item itemvalue="Tomcat Server.Tomcat" />
       <item itemvalue="JUnit.SimulationTest (1)" />
       <item itemvalue="JUnit.SimulationTest (2)" />
       <item itemvalue="JUnit.SimulationTest.testMaxDrawnNumber" />
+      <item itemvalue="Tomcat Server.Tomcat" />
     </list>
     <recent_temporary>
       <list>
@@ -693,6 +619,7 @@
       <workItem from="1546698444108" duration="5634000" />
       <workItem from="1546781945834" duration="18458000" />
       <workItem from="1554990358242" duration="8768000" />
+      <workItem from="1555019482124" duration="692000" />
     </task>
     <servers />
   </component>
@@ -729,7 +656,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118021000" />
+    <option name="totallyTimeSpent" value="118713000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -742,9 +669,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26287878" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26742426" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24962178" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -752,11 +678,10 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" weight="0.18910742" />
       <window_info id="Web" order="7" side_tool="true" weight="0.32980332" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info active="true" anchor="bottom" id="Database Console" order="0" visible="true" weight="0.32911393" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32911393" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.047923323" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.35782748" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.471519" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -770,8 +695,7 @@
       <window_info anchor="bottom" id="Spring" order="14" weight="0.32911393" />
       <window_info anchor="bottom" id="Inspection Results" order="15" weight="0.32911393" />
       <window_info anchor="bottom" auto_hide="true" id="Java Enterprise" order="16" weight="0.32911393" />
-      <window_info anchor="right" id="Maven" sideWeight="0.49496645" visible="true" weight="0.0810606" />
-      <window_info anchor="right" id="Coverage" sideWeight="0.50503355" side_tool="true" weight="0.5469697" />
+      <window_info anchor="bottom" id="Docker" order="17" show_stripe_button="false" />
       <window_info anchor="right" id="Bean Validation" order="0" weight="0.32954547" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.15885022" />
@@ -782,6 +706,8 @@
       <window_info anchor="right" id="Database" order="7" weight="0.06818182" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Maven Projects" order="9" visible="true" weight="0.20272315" />
+      <window_info anchor="right" id="Maven" order="10" sideWeight="0.49496645" visible="true" weight="0.022727273" />
+      <window_info anchor="right" id="Coverage" order="11" sideWeight="0.50503355" side_tool="true" weight="0.5469697" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
@@ -839,13 +765,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/settings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1426">
-          <caret line="62" column="89" selection-start-line="62" selection-start-column="89" selection-end-line="62" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lotto.iml" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/draw.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -894,57 +813,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/config/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="50" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/controller/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/dao/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/dto/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/exceptions/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/config/package-info.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/controller/package-info.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/dao/package-info.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/dto/package-info.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/exceptions/package-info.java" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/275f7ce8-dcd8-40ad-bde9-d16ab8923455/console.sql" />
     <entry file="file://$PROJECT_DIR$/test/package-info.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/model/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/create.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/model/package-info.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/create.sql" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c7bd47b2-6c0c-4dfd-979b-60bb6782e12d/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -997,13 +874,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/service/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/service/package-info.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/service/SimulationService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -1034,17 +905,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/model/Result.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/dto/Settings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        <state relative-caret-position="437">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/model/Draw.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/config/HibernateConf.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="805">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1054,39 +925,82 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/exceptions/IllegalValueException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/dto/Settings.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/settings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        <state relative-caret-position="-92">
+          <caret line="20" column="70" selection-start-line="20" selection-start-column="70" selection-end-line="20" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/model/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
           <folding>
-            <element signature="e#331#332#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#392#393#0" expanded="true" />
-            <element signature="e#422#423#0" expanded="true" />
-            <element signature="e#449#450#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#510#511#0" expanded="true" />
             <element signature="e#540#541#0" expanded="true" />
-            <element signature="e#572#573#0" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
-            <element signature="e#648#649#0" expanded="true" />
-            <element signature="e#688#689#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#599#600#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+            <element signature="e#668#669#0" expanded="true" />
+            <element signature="e#704#705#0" expanded="true" />
+            <element signature="e#733#734#0" expanded="true" />
+            <element signature="e#760#761#0" expanded="true" />
+            <element signature="e#798#799#0" expanded="true" />
+            <element signature="e#830#831#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/config/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-45">
+          <caret line="83" column="36" lean-forward="true" selection-start-line="83" selection-start-column="36" selection-end-line="83" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/dao/DrawDaoImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/dao/DrawDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/dao/ResultDaoImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
+        <state relative-caret-position="107">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#627#628#0" expanded="true" />
-            <element signature="e#679#680#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1098,52 +1012,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/dao/DrawDaoImp.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/model/Draw.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/dao/DrawDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/controller/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2001">
-          <caret line="87" selection-start-line="87" selection-end-line="87" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1565#1566#0" expanded="true" />
-            <element signature="e#1591#1592#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/config/HibernateConf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/martyna/lotto/config/AppConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="38" column="55" lean-forward="true" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
+        <state relative-caret-position="69">
+          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

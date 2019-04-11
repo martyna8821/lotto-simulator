@@ -48,17 +48,16 @@ public class HomeController {
         return "draw";
     }
 
-    @RequestMapping("/settings")
+    @GetMapping("/settings")
     public String showSettingsForm( @RequestParam(value = "hasIllegalValues", required = false, defaultValue = "false") boolean
             hasIllegalValues, ModelMap modelMap){
         modelMap.addAttribute("hasIllegalValues", hasIllegalValues);
         Settings settings = new Settings();
         modelMap.addAttribute("settings", settings);
-
         return "settings";
     }
 
-    @RequestMapping("/settings-form-check")
+    @PostMapping("/settings")
     public String handleForm(@ModelAttribute("settings") @Valid Settings settings, BindingResult result, HttpServletResponse response)
                             throws IllegalValueException {
 
@@ -82,7 +81,6 @@ public class HomeController {
     public String handle(Model model){
         boolean hasIllegalValues = true;
         model.addAttribute("hasIllegalValues", hasIllegalValues);
-
         return "redirect:/settings";
     }
 
