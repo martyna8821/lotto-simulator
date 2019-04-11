@@ -7,8 +7,6 @@ import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
-import javax.naming.Context;
-import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.sql.DataSource;
 import java.util.Properties;
@@ -28,7 +26,7 @@ public class HibernateConf {
      * @throws NamingException thrown if cannot read required parameters from context
      */
     @Bean
-    public LocalSessionFactoryBean sessionFactory() throws NamingException {
+    public LocalSessionFactoryBean sessionFactory() {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
         sessionFactory.setDataSource(dataSource());
         sessionFactory.setPackagesToScan("pl.martyna.lotto" );
@@ -43,16 +41,14 @@ public class HibernateConf {
      * @throws NamingException thrown if cannot read required parameters from context
      */
     @Bean
-    public DataSource dataSource() throws NamingException {
-
-        Context env = (Context)new InitialContext().lookup("java:comp/env");
+    public DataSource dataSource() {
         BasicDataSource dataSource = new BasicDataSource();
-        dataSource.setDriverClassName((String)env.lookup("driver"));
-        dataSource.setUrl((String)env.lookup("database-url") );
-        dataSource.setUsername((String)env.lookup("user"));
-        dataSource.setPassword((String)env.lookup("password"));
+        dataSource.setDriverClassName("org.postgresql.Driver");
+        dataSource.setUrl("jdbc:postgresql://localhost:5432/lotto");
+        dataSource.setUsername("admin");
+        dataSource.setPassword("admin");
 
-        return  dataSource;
+        return dataSource;
     }
 
     /**
@@ -74,7 +70,7 @@ public class HibernateConf {
     private Properties hibernateProperties() {
         Properties hibernateProperties = new Properties();
         hibernateProperties.setProperty("hibernate.hbm2ddl.auto", "create-drop");
-        hibernateProperties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL8Dialect");
+        hibernateProperties.setProperty("hibernate.dialect", "org.hibernate.dialect.PostgreSQLDialect");
 
         return hibernateProperties;
     }

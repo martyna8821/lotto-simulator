@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Built-By: MARTYNA
+Built-By: martyna
 Created-By: IntelliJ IDEA
-Build-Jdk: 10
+Build-Jdk: 11.0.3
 

@@ -31,7 +31,7 @@
 
     <context-param>
         <param-name>driver</param-name>
-        <param-value>com.mysql.jdbc.Driver</param-value>
+        <param-value>org.postgresql.Driver</param-value>
     </context-param>
 
 
@@ -39,25 +39,25 @@
     <env-entry>
         <env-entry-name>driver</env-entry-name>
         <env-entry-type>java.lang.String</env-entry-type>
-        <env-entry-value>com.mysql.cj.jdbc.Driver</env-entry-value>
+        <env-entry-value>org.postgresql.Driver</env-entry-value>
     </env-entry>
 
     <env-entry>
         <env-entry-name>database-url</env-entry-name>
         <env-entry-type>java.lang.String</env-entry-type>
-        <env-entry-value>jdbc:mysql://localhost:3306/lotto_simulator_database?serverTimezone=UTC</env-entry-value>
+        <env-entry-value>jdbc:postgresql://localhost:5432/lotto</env-entry-value>
     </env-entry>
 
     <env-entry>
         <env-entry-name>password</env-entry-name>
         <env-entry-type>java.lang.String</env-entry-type>
-        <env-entry-value>lotto_user</env-entry-value>
+        <env-entry-value>admin</env-entry-value>
     </env-entry>
 
     <env-entry>
         <env-entry-name>user</env-entry-name>
         <env-entry-type>java.lang.String</env-entry-type>
-        <env-entry-value>lotto_user</env-entry-value>
+        <env-entry-value>admin</env-entry-value>
     </env-entry>
 
 
