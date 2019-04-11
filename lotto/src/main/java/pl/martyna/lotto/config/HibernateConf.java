@@ -11,20 +11,10 @@ import javax.naming.NamingException;
 import javax.sql.DataSource;
 import java.util.Properties;
 
-/**
- * Contains basic Hibernate configuration
- * @author Martyna Drabinska
- * @version 0.1
- */
 @Configuration
 @EnableTransactionManagement(proxyTargetClass = true)
 public class HibernateConf {
 
-    /**
-     * Returns session factory
-     * @return session factory
-     * @throws NamingException thrown if cannot read required parameters from context
-     */
     @Bean
     public LocalSessionFactoryBean sessionFactory() {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
@@ -35,11 +25,6 @@ public class HibernateConf {
         return sessionFactory;
     }
 
-    /**
-     * Returns data source
-     * @return data source
-     * @throws NamingException thrown if cannot read required parameters from context
-     */
     @Bean
     public DataSource dataSource() {
         BasicDataSource dataSource = new BasicDataSource();
@@ -51,11 +36,6 @@ public class HibernateConf {
         return dataSource;
     }
 
-    /**
-     * Returns transaction manager
-     * @return transaction manager
-     * @throws NamingException thrown if cannot read required parameters from context
-     */
     @Bean
     public PlatformTransactionManager hibernateTransactionManager() throws NamingException{
         HibernateTransactionManager transactionManager = new HibernateTransactionManager();
@@ -63,10 +43,6 @@ public class HibernateConf {
         return transactionManager;
     }
 
-    /**
-     * Returns hibernate properties
-     * @return hibernate properties
-     */
     private Properties hibernateProperties() {
         Properties hibernateProperties = new Properties();
         hibernateProperties.setProperty("hibernate.hbm2ddl.auto", "create-drop");

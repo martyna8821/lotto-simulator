@@ -13,38 +13,21 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
-/**
- * Provides methods responsible for exchanging data with database
- * @author Martyna Drabinska
- * @version 0.1
- */
 @Repository
 public class DrawServiceImp  implements DrawService{
 
-    /** DAO for draw_table */
-   private final DrawDao drawDao;
-    /** DAO for results table */
+    private final DrawDao drawDao;
     private final ResultDao resultDao;
 
-    /**
-     * Default constructor
-     * @param drawDao DAO for draw_table
-     * @param resultDao DAO for results
-     */
     @Autowired
     DrawServiceImp(DrawDao drawDao, ResultDao resultDao){
         this.drawDao = drawDao;
         this.resultDao = resultDao;
     }
 
-    /**
-     * Returns list of sets with history of drawings
-     * @return list of sets with history of drawings
-     */
     @Override
     @Transactional
     public List<Set<Integer>> getHistory(){
-
         List<Draw> drawList = drawDao.getHistory();
         List<Set<Integer>> resultList = new LinkedList<>();
         for(Draw draw: drawList){
@@ -60,10 +43,6 @@ public class DrawServiceImp  implements DrawService{
     }
 
 
-    /**
-     * Saves one set of results
-     * @param numbers set of results
-     */
     @Override
     @Transactional
     public void saveDraw(Set<Integer> numbers){
@@ -74,10 +53,7 @@ public class DrawServiceImp  implements DrawService{
             results.add(result);
             resultDao.saveResult(result);
         }
-
         draw.setResults(results);
         drawDao.saveDraw(draw);
-
-
     }
 }

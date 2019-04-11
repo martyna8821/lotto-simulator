@@ -1,26 +1,20 @@
+package test;
 import org.junit.*;
-
 import pl.martyna.lotto.exceptions.IllegalValueException;
 import pl.martyna.lotto.service.SimulationServiceImp;
-
 import java.util.Collections;
 import java.util.Set;
 import static org.junit.Assert.*;
 
 /**
- * This class contains JUnit tests for class Draw
+ * This class contains JUnit tests for SimulationService
  * @author Martyna Drabinska
  * @version 1.0
  */
 public class SimulationTest {
 
-    /** Draw class object for testing */
     private SimulationServiceImp simulationService;
 
-    /** Default constructor */
-    public SimulationTest(){}
-
-    /** Before each test creates new instance od Draw class  */
     @Before
     public void setUp(){
         this.simulationService = new SimulationServiceImp();
@@ -28,7 +22,6 @@ public class SimulationTest {
 
     /**
      * Tests if setting incorrect range values throws an IllegalValueException
-     * @throws IllegalValueException exception that should be thrown for the incorrect range
      */
     @Test(expected = IllegalValueException.class)
     public void testIncorrectRange() throws IllegalValueException{
@@ -37,14 +30,13 @@ public class SimulationTest {
 
     /**
      * Tests if trying to set quantity bigger then the range of drawn numbers throws a IllegalValueException
-     * @throws IllegalValueException exception that should be thrown for too big quantity
      */
     @Test(expected = IllegalValueException.class)
     public void testQuantityOutOfRange() throws IllegalValueException{
         simulationService.changeSettings(1,10,20);
     }
 
-    /** Tests if setting correct settings values will succeeded */
+    /** Tests setting correct settings values */
     @Test
     public void testCorrectSettings(){
         try{
@@ -81,7 +73,7 @@ public class SimulationTest {
     }
     /** Tests if max value of result in drawn set is not bigger then settings max value */
     @Test
-    public void testMaxDrawnNumber(){
+    public void testMaxDrawnNumber() throws Exception{
         Set<Integer> results = simulationService.randomResults();
         if(   Collections.max(results) > simulationService.getMax())
             fail("Drawn maximum result bigger then max");

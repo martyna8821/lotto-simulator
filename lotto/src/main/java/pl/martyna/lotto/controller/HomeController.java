@@ -16,47 +16,23 @@ import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 import java.util.Set;
 
-/**
- * Spring MVC Controller
- * @author Martyna Drabinska
- * @version 0.1
- */
 @Controller
 public class HomeController {
 
-    /** Service responsible for lotto simulation */
     private final SimulationService simulationService;
-    /** Service responsible for database operations */
     private final DrawService drawService;
 
-    /**
-     * default constructor
-     * @param drawService service responsible for database operations
-     * @param simulationService service responsible for lotto simulation
-     */
     @Autowired
     HomeController(SimulationServiceImp simulationService, DrawService drawService){
       this.simulationService = simulationService;
       this.drawService = drawService;
 }
 
-    /**
-     * Returns view name of main page
-     * @return view name of main page
-     */
     @RequestMapping("/")
     public String showMainPage(){
     return "index";
     }
 
-    /**
-     * Returns view name of page with drawn results
-     * @param minCookie cookie which contains minimum value of drawn results
-     * @param maxCookie cookie which contains maximum value of drawn results
-     * @param quantityCookie cookie which contains quantity of drawn results
-     * @param modelMap  Spring ModelMap
-     * @return view name of page with results
-     */
     @RequestMapping("/draw")
     public String showResults(@CookieValue(value="min", defaultValue ="1") int minCookie, @CookieValue(value = "max", defaultValue = "49") int maxCookie,
                               @CookieValue(value = "quantity", defaultValue = "5") int quantityCookie, ModelMap modelMap){
@@ -72,13 +48,6 @@ public class HomeController {
         return "draw";
     }
 
-
-    /**
-     * Returns view name of page with form responsible for changing settings
-     * @param hasIllegalValues contains information if alert about illegal values should appear in view
-     * @param modelMap Spring ModelMap
-     * @return view name of page with form responsible for changing settings
-     */
     @RequestMapping("/settings")
     public String showSettingsForm( @RequestParam(value = "hasIllegalValues", required = false, defaultValue = "false") boolean
             hasIllegalValues, ModelMap modelMap){
@@ -89,14 +58,6 @@ public class HomeController {
         return "settings";
     }
 
-    /**
-     * Handles submitted form
-     * @param settings DTO object which contains data from submitted form
-     * @param result contains information about settings validation
-     * @param response Http response
-     * @return view name
-     * @throws IllegalValueException  if for passed arguments service can't carry out a simulation
-     */
     @RequestMapping("/settings-form-check")
     public String handleForm(@ModelAttribute("settings") @Valid Settings settings, BindingResult result, HttpServletResponse response)
                             throws IllegalValueException {
@@ -117,11 +78,6 @@ public class HomeController {
         }
     }
 
-    /**
-     * Handles IllegalValueException
-     * @param model Spring Model
-     * @return redirect for changing settings
-     */
     @ExceptionHandler(value = IllegalValueException.class)
     public String handle(Model model){
         boolean hasIllegalValues = true;
@@ -130,11 +86,6 @@ public class HomeController {
         return "redirect:/settings";
     }
 
-    /**
-     * Shows history of drawings
-     * @param modelMap Spring ModelMap
-     * @return view name of page with history of drawings
-     */
     @RequestMapping("/history")
     public String showHistory(ModelMap modelMap){
         modelMap.addAttribute("history", drawService.getHistory());
